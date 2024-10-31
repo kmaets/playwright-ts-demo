@@ -1,0 +1,23 @@
+{
+  "name": "playwright-typescript-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test example",
+    "test-title": "playwright test --headed --project=chromium -g \"get started link\"",
+    "test-snap": "playwright test --headed --project=chromium -g \"check snapshot\"",
+    "test-ui": "playwright test -g \"get started link\" --ui",
+    "test-chrome": "playwright test --project=chromium",
+    "test-example": "playwright test todoApp",
+    "test-debug": "playwright test -g \"get started link\" --debug",
+    "test-codegen": "playwright codegen"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.48.2",
+    "@types/node": "^22.8.1"
+  }
+}
