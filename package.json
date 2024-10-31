@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "playwright test example",
+    "test": "playwright test --update-snapshots --project=chromium example",
     "test-title": "playwright test --headed --project=chromium -g \"get started link\"",
     "test-snap": "playwright test --headed --project=chromium -g \"check snapshot\"",
     "test-ui": "playwright test -g \"get started link\" --ui",
