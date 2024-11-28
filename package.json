@@ -3,14 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "playwright test --update-snapshots --project=chromium example",
-    "test-title": "playwright test --headed --project=chromium -g \"get started link\"",
-    "test-snap": "playwright test --headed --project=chromium -g \"check snapshot\"",
-    "test-ui": "playwright test -g \"get started link\" --ui",
-    "test-chrome": "playwright test --project=chromium",
-    "test-example": "playwright test todoApp",
-    "test-debug": "playwright test -g \"get started link\" --debug",
-    "test-codegen": "playwright codegen"
+    "test": "playwright test --project=chromium",
+    "test-sauce": "playwright test --project=chromium login",
+    "test-headed": "playwright test --headed --project=chromium login",
+    "test-ui": "playwright test -g \"should open swag labs login page\" --ui",
+    "test-title": "playwright test --project=chromium -g \"should open swag labs login page\"",
+    "test-debug": "playwright test -g \"should open swag labs login page\" --debug",
+        "test-codegen": "playwright codegen"
   },
   "keywords": [],
   "author": "",
@@ -19,5 +18,12 @@
   "devDependencies": {
     "@playwright/test": "^1.48.2",
     "@types/node": "^22.8.1"
+  },
+  "dependencies": {
+    "@stylistic/eslint-plugin": "^2.11.0",
+    "@typescript-eslint/eslint-plugin": "^8.16.0",
+    "@typescript-eslint/parser": "^8.16.0",
+    "dotenv": "^16.4.5",
+    "eslint": "^9.15.0"
   }
 }
