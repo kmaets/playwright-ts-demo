@@ -40,6 +40,5 @@ const SELECTORS = {
 		resetSate: 'Reset App State',
 	},
 	openMenu: 'Open Menu',
-	closeMenu: 'password',
-	loginButtonText: 'Login',
+	closeMenu: 'Close Menu',
 };
